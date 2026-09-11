@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Workspace01",
+  "version": "1.0.0",
+  "description": "Single-window workspace manager. Organize live tabs into named workspaces and switch between them without reloading.",
+  "homepage_url": "https://github.com/ntrezowan/workspace01-chrome",
+  "minimum_chrome_version": "123",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Workspace01",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "incognito": "not_allowed"
+}

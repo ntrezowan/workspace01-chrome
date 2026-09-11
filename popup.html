@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Workspace01</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="panel">
+  <section class="current-box" aria-label="Current workspace">
+    <p class="current-label">Current workspace</p>
+    <p class="current-name" id="current-name">None</p>
+  </section>
+
+  <div class="toolbar-row">
+    <div class="section-title">Workspaces</div>
+    <button class="icon-button" id="add-workspace" type="button" title="Create workspace" aria-label="Create workspace"><span>+</span></button>
+  </div>
+
+  <div class="create-panel" id="create-panel">
+    <input type="text" id="workspace-name" class="ws-input" placeholder="New workspace name" maxlength="40" autocomplete="off" spellcheck="false">
+    <button id="create-go" class="create-go" type="button">Add</button>
+  </div>
+  <div class="input-hint" id="input-hint"></div>
+
+  <div class="workspace-list" id="workspace-list" role="listbox" aria-label="Workspaces"></div>
+
+  <div class="footer">
+    <a href="#" id="reset-link" class="reset-link">Reset all workspaces</a>
+  </div>
+</div>
+
+<div class="confirm-overlay" id="confirm-overlay">
+  <div class="confirm-box" role="dialog" aria-modal="true" aria-labelledby="confirm-message">
+    <p id="confirm-message"></p>
+    <div class="btn-row" id="confirm-buttons"></div>
+  </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
