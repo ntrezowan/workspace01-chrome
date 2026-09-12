@@ -1,4 +1,4 @@
-# Workspace01
+# Workspace01 for Chrome
 
 Single-window workspace manager for Chrome. Organize live tabs into named workspaces and switch between them without closing, recreating, or reloading tabs.
 
